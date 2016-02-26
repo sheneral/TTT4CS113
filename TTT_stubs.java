@@ -54,8 +54,14 @@ class TTT_stubs{
       return (db);
    }
    
-   static void display(char [][]b){                  
-   }
+   static void display(char [][]b){
+      for (char[] row:b){
+         for (char c:row){
+            System.out.print(c);
+         }//inner for
+      System.out.println();
+      }//outer for                  
+   }//display function
    
    static int makeChoice(char []b, char s){
       return(0);
